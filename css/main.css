@@ -118,3 +118,24 @@ body {
 #social:hover {
     background-color: #EA5455;
 }
+
+@media only screen and (min-width: 700px) {
+    .img-card {
+        max-width: none;
+        width: 33.333333%;
+        float: left;
+        margin-right: 6.666666%
+    }
+    .col-d-60 {
+        float: left;
+        width: 60%;
+    }
+    .col-d-50-l {
+        float: left;
+        width: 48%;
+    }
+    .col-d-50-r {
+        float: right;
+        width: 48%;
+    }
+}
