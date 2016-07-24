@@ -2,21 +2,6 @@ html {
     font-size: 110%;  
 }
 
-/*Mobile layout, full width*/
-.row {width: 100%;}
-
-.col-1 {width: 100%;}
-.col-2 {width: 100%;}
-.col-3 {width: 100%;}
-.col-4 {width: 100%;}
-.col-6 {width: 100%;}
-.col-7 {width: 100%;}
-.col-8 {width: 100%;}
-.col-9 {width: 100%;}
-.col-10 {width: 100%;}
-.col-11 {width: 100%;}
-.col-12 {width: 100%;}
-
 body {
     background-color: #2D4059;
 }
@@ -33,12 +18,12 @@ body {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-#content {
+#main-content {
     margin: -100px auto 0 auto;
     width: 94%;
 }
 
-#intro {
+#introduction {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -78,6 +63,7 @@ body {
 }
 
 .card {
+    flex-grow: 1;
     box-sizing: border-box;
     color: #000000;
     background-color: #EEEEEE;
@@ -149,7 +135,7 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-    /*12 column grid*/
+    /*12 column grid
     .row {width: 100%}
 
     .col-1 {width: 8.33%;}
@@ -163,20 +149,39 @@ body {
     .col-9 {width: 75%;}
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
-
+    */
     .img-card {
         max-width: none;
         margin: none;
         margin-right: 10px;
+        flex: 1;
     }
 
-    #intro {
+    #introduction {
         flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    #data {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        flex: 2;
+        justify-content: space-between;
     }
 
     #knowledge {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    #knowledge .card {
+        flex-grow: 0;
+    }
+
+    .halfs {
+        flex-basis: 49%;
     }
 
 }
