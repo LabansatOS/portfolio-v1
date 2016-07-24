@@ -1,5 +1,5 @@
 html {
-    font-size: 110%;  
+    font-size: 100%;  
 }
 
 body {
@@ -135,25 +135,15 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
-    /*12 column grid
-    .row {width: 100%}
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 49%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    */
+    html {
+        font-size: 110%;  
+    }
+
     .img-card {
         max-width: none;
         margin: none;
-        margin-right: 10px;
+        margin-right: 20px;
         flex: 1;
     }
 
@@ -166,7 +156,7 @@ body {
     #data {
         display: flex;
         flex-direction: column;
-        flex-basis: 60%;
+        /*flex-basis: 60%;*/
         flex: 2;
         justify-content: space-between;
     }
